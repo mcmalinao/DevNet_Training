@@ -72,8 +72,8 @@ def main():
         conn_params.connect(
             hostname=hostname,
             port=22,
-            username="mcmalinao",
-            password="J0@nn1230",
+            username="admin",
+            password="admin",
             look_for_keys=False,
             allow_agent=False,
         )
