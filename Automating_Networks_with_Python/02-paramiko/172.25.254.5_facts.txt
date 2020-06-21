@@ -1,0 +1,17 @@
+terminal len 0
+mcmnetsw01#show version | i Software,
+Cisco IOS Software, C3750 Software (C3750-IPSERVICESK9-M), Version 15.0(2)SE11, RELEASE SOFTWARE (fc3)
+mcmnetsw01#show inventory
+NAME: "1", DESCR: "WS-C3750G-48PS"
+PID: WS-C3750G-48PS-S  , VID: V08  , SN: FOC1428W0GV
+
+
+mcmnetsw01#show ntp associations
+
+  address         ref clock       st   when   poll reach  delay  offset   disp
+*~103.51.68.133   .PPS.            1    819   1024   377 54.344   1.738 13.206
++~220.158.215.21  203.4.241.5      2      5   1024   377 28.010   3.306 11.224
+ ~52.62.118.166   .STEP.          16      -   1024     0  0.000   0.000 15937.
++~103.214.220.220 203.35.83.242    2      9   1024   377 15.103   2.156 15.094
+ * sys.peer, # selected, + candidate, - outlyer, x falseticker, ~ configured
+mcmnetsw01#

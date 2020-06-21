@@ -1,0 +1,9 @@
+
+{% for vlan in data.vlans %}
+vlan {{vlan.number}}
+ name {{vlan.name}}
+ mtu {{vlan.mtu}}
+ state {{vlan.state}}
+ {% endfor %}
+ end
+ write memory

@@ -1,0 +1,18 @@
+# Define list of hosts
+
+host_list:
+  #- name: 172.25.255.14
+  #  ip: 172.25.255.14
+  #  vlan_cmd: "show running-config | section vlan"
+  #  platform: ios
+  #  file_system: "flash:"
+  #- name: 172.25.255.15
+  #  ip: 172.25.255.15
+  #  vlan_cmd: "show running-config | section vlan"
+  #  platform: ios
+  #  file_system: "flash:"
+  - name: 172.25.255.16
+    ip: 172.25.255.16
+    vlan_cmd: "show running-config | section vlan"
+    platform: nxos
+    file_system: "bootflash:"

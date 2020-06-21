@@ -1,0 +1,8 @@
+
+vlans:
+  - number: "200"
+    name: "JINJA_200"
+    state: "active"
+  - number: "201"
+    name: "JINJA_201"
+    state: "active"

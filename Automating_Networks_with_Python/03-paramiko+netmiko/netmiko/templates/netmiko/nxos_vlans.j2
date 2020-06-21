@@ -1,0 +1,8 @@
+
+{% for vlan in data.vlans %}
+vlan {{vlan.number}}
+ name {{vlan.name}}
+ state {{vlan.state}}
+ {% endfor %}
+ end
+ copy run start

@@ -1,0 +1,55 @@
+! Command: show running-config
+! device: Arista1 (vEOS, EOS-4.20.15M)
+!
+! boot system flash:/vEOS-lab.swi
+!
+transceiver qsfp default-mode 4x10G
+!
+hostname Arista1
+!
+ntp server 10.10.10.8
+!
+spanning-tree mode mstp
+!
+tacacs-server key 7 071F3858460617
+tacacs-server timeout 10
+tacacs-server host 10.10.10.7
+!
+no aaa root
+!
+username admin role network-admin secret sha512 $6$F0RLX0STwLYAxOd4$tnYeBSk//oN409j4g321Cyy45GnDX9IlMaYxD8jitXByBenqTY/.LqbzRso/qCcIx2UbhbksK7KRZ/7Luo.W30
+username devnet privilege 15 secret sha512 $6$nukB3kN9e/UKUDgu$h6FJ3S4OZ6uW61MwlnuJsRlno/vGLdUv3RRnA6An1zHk8oy4mIpZys4mvD37ecbi58p4rICSEABTYoniCnHjn0
+!
+vlan 22,33,44
+!
+interface Ethernet1
+!
+interface Ethernet2
+!
+interface Ethernet3
+!
+interface Ethernet4
+!
+interface Ethernet5
+!
+interface Ethernet6
+!
+interface Ethernet7
+!
+interface Ethernet8
+!
+interface Loopback0
+   ip address 1.1.1.1/24
+!
+interface Management1
+   ip address 172.25.255.21/24
+!
+ip route 0.0.0.0/0 172.25.255.1
+!
+ip routing
+!
+router bgp 6500
+   router-id 1.1.1.1
+   network 0.0.0.0/32
+!
+end

@@ -1,0 +1,14 @@
+terminal len 0
+MCMNETUC520>show version | i Software,
+Cisco IOS Software, UC500 Software (UC500-ADVIPSERVICESK9-M), Version 15.1(4)M6, RELEASE SOFTWARE (fc2)
+MCMNETUC520>show inventory
+NAME: "UC520-8U-4FXO-K9 Chassis", DESCR: "UC520-8U-4FXO-K9 Chassis"
+PID: UC520-8U-4FXO-K9  , VID: V01, SN: FHK131820RY
+
+
+MCMNETUC520>show ntp associations
+
+  address         ref clock       st   when   poll reach  delay  offset   disp
+*~127.127.1.1     .LOCL.           7     11     16   377  0.000   0.000  0.225
+ * sys.peer, # selected, + candidate, - outlyer, x falseticker, ~ configured
+MCMNETUC520>
